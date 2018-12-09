@@ -1,8 +1,8 @@
 *
 !autostart.sh
 !compton.conf
-!autostart/*
 !autostart
+!autostart/discord.sh
 !termite/*
 !termite/**
 !termite/**/*
