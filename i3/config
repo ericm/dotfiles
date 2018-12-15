@@ -41,6 +41,9 @@ bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 
+# i3lock
+bindsym $mod+q exec sh /home/eric/.config/i3/i3lock-conf.sh
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
