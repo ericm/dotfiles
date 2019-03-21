@@ -263,5 +263,6 @@ exec --no-startup-id /home/eric/.config/autostart.sh
 
 exec --no-startup-id feh --bg-scale --no-xinerama /home/eric/wallpaper/beautiful-landscape-high-resolution-4k-wallpaper-44-3840x2160.jpg
 
-exec --no-startup-id systemctl start openvpn-client@vpn.service 
+exec --no-startup-id systemctl start openvpn-client@vpn.service
 
+exec --no-startup-id sh -c 'modprobe -r iwlwifi && modprobe iwlwifi 11n_disable=1'
