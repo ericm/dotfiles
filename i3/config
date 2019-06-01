@@ -131,7 +131,7 @@ bindsym KP_Right workspace $ws6
 bindsym KP_Home workspace $ws7
 bindsym KP_Up workspace $ws8
 bindsym KP_Prior workspace $ws9
-bindsym KP_Insert kill
+bindsym $mod+c kill
 
 workspace $ws1 gaps outer 5
 
