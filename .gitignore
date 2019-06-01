@@ -18,5 +18,7 @@ fish/fish_variables
 !i3
 !gtk-3.0
 !gtk-3.0/*
+!kitty
+!kitty/*
 !README.md
 !.gitignore
