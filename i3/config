@@ -216,7 +216,7 @@ mode "resize" {
 bindsym $mod+r mode "resize
 
 # Theme
-set $black	#0e0e0e
+set $black	#0e0e0ef5
 set $white	#839496
 set $gray	#CCCCCC
 set $darkgray	#666666
