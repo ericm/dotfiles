@@ -130,6 +130,8 @@ bindsym KP_Up workspace $ws8
 bindsym KP_Prior workspace $ws9
 bindsym KP_Insert kill
 
+workspace $ws1 gaps outer 5
+
 #move to workplace with kp
 bindsym $mod+KP_End move container to workspace $ws1
 bindsym $mod+KP_Down move container to workspace $ws2
@@ -227,16 +229,17 @@ set $cyan	#2AA198
 set $dark	#00252E
 
 for_window [class="^.*"] border pixel 0
-for_window [window_role="pop-up"] floating enable border pixel 3
-for_window [window_role="bubble"] floating enable border pixel 3
-for_window [window_role="task_dialog"] floating enable border pixel 3
-for_window [window_role="Preferences"] floating enable border pixel 3
+#for_window [window_role="pop-up"] floating enable border pixel 3
+#for_window [window_role="bubble"] floating enable border pixel 3
+#for_window [window_role="task_dialog"] floating enable border pixel 3
+#for_window [window_role="Preferences"] floating enable border pixel 3
 
-new_window 1pixel
+#new_window 1pixel
 
-for_window [window_type="dialog"] floating enable border pixel 3
-for_window [window_type="menu"] floating enable border pixel 3
+#for_window [window_type="dialog"] floating enable border pixel 3
+#for_window [window_type="menu"] floating enable border pixel 3
 
+gaps inner 20
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -261,7 +264,7 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id /home/eric/.config/autostart/discord.sh
 exec --no-startup-id /home/eric/.config/autostart.sh
 
-exec --no-startup-id feh --bg-scale --no-xinerama /home/eric/wallpaper/beautiful-landscape-high-resolution-4k-wallpaper-44-3840x2160.jpg
+exec --no-startup-id feh --bg-scale --no-xinerama /home/eric/wallpaper/gh.jpg
 
 exec --no-startup-id systemctl start openvpn-client@vpn.service 
 
