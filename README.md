@@ -7,7 +7,9 @@
 ```
 cd ~
 git clone https://github.com/ericm/dotfiles
+mv dotfiles/__move_contents_to_home__/* .
 mv dotfiles/* .config
+rmdir dotfiles
 ```
 
 Copyright 2019 Eric Moynihan

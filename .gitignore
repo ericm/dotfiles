@@ -23,6 +23,8 @@ fish/fish_variables
 !.zsh
 !.zsh/.zshrc
 !.vimrc
+!__move_contents_to_home__
+!__move_contents_to_home__/*
 
 !README.md
 !.gitignore
