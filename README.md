@@ -7,7 +7,8 @@
 ```
 cd ~
 git clone https://github.com/ericm/dotfiles
-mv dotfiles/__move_contents_to_home__/* .
+mv dotfiles/__move_contents_to_home__/.* .
+mv dotfiles/.* .config
 mv dotfiles/* .config
 rmdir dotfiles
 ```
