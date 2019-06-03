@@ -12,4 +12,7 @@ mv dotfiles/* .config
 rmdir dotfiles
 ```
 
+## Screenshot
+![](screenshot.png?raw=true)
+
 Copyright 2019 Eric Moynihan
