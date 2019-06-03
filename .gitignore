@@ -26,6 +26,9 @@ fish/fish_variables
 !__move_contents_to_home__
 !__move_contents_to_home__/*
 !screenshot.png
+!rofi
+!rofi/*
+
 
 !README.md
 !.gitignore
