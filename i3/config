@@ -99,16 +99,16 @@ bindsym $mod+p exec deepin-screenshot
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 number 1
+set $ws2 number 2
+set $ws3 number 3
+set $ws4 number 4
+set $ws5 number 5
+set $ws6 number 6
+set $ws7 number 7
+set $ws8 number 8
+set $ws9 number 9
+set $ws10 number 10
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -133,7 +133,7 @@ bindsym KP_Up workspace $ws8
 bindsym KP_Prior workspace $ws9
 bindsym $mod+c kill
 
-workspace $ws1 gaps outer 5
+#workspace $ws1 gaps outer 5
 
 #move to workplace with kp
 bindsym $mod+KP_End move container to workspace $ws1
@@ -265,6 +265,9 @@ bar {
         }
 
 }
+
+
+exec_always --no-startup-id killall i3icons2 && i3icons2 || i3icons2
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id /home/eric/.config/autostart/discord.sh
