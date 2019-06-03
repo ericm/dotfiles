@@ -20,5 +20,9 @@ fish/fish_variables
 !gtk-3.0/*
 !kitty
 !kitty/*
+!.zsh
+!.zsh/.zshrc
+!.vimrc
+
 !README.md
 !.gitignore
