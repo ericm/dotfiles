@@ -102,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 alias lt="ls -tal"
 alias vim="vim -u ~/.config/.vimrc"
 alias clock="tty-clock -C 3"
+alias night="redshift -O 4500"
+alias day="redshift -x"
 alias discord-fix="sh /home/eric/.config/autostart/discord.sh"
 alias mnt-home="sudo sshfs -o allow_other eric@192.168.1.40:/home/eric /mnt/home -o IdentityFile=/home/eric/.ssh/id_rsa"
 
