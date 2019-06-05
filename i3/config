@@ -42,7 +42,7 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 # installed.
 
 # i3lock
-bindsym $mod+q exec sh /home/eric/.config/i3/i3lock-conf.sh
+bindsym $mod+q exec sh ~/.config/i3/i3lock-conf.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -232,7 +232,9 @@ set $orange	#E59847
 set $cyan	#2AA198
 set $dark	#00252E
 
-set $background #202140
+# Set this per wallpaper
+set $background #0B0B41
+set $secondary  #0F0F3F
 
 for_window [class="^.*"] border pixel 0
 #for_window [window_role="pop-up"] floating enable border pixel 3
@@ -250,17 +252,17 @@ gaps inner 20
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks -c /home/eric/.config/i3/i3blocks.conf
-	position bottom
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        position bottom
         tray_output primary
         colors {
                 statusline	#999999
                 background	$background
 
                 # Colors            border      backgr.     text
-                focused_workspace       $white         $white          $background
-                active_workspace	#2A2B54  	#2A2B54 	$white
-                inactive_workspace	#242547 	#242547         $white
+                focused_workspace   $white      $white      $background
+                active_workspace	$secondary  $secondary  $white
+                inactive_workspace	$secondary  $secondary  $white
                 urgent_workspace  	$orange		$orange		$dark
         }
 
@@ -270,8 +272,8 @@ bar {
 exec_always --no-startup-id killall i3icons2 && i3icons2 || i3icons2
 
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec --no-startup-id /home/eric/.config/autostart/discord.sh
-exec --no-startup-id /home/eric/.config/autostart.sh
+exec --no-startup-id ~/.config/autostart/discord.sh
+exec --no-startup-id ~/.config/autostart.sh
 
 exec --no-startup-id feh --bg-scale --no-xinerama ~/.config/wallpapers/dragon.jpg
 
