@@ -273,7 +273,7 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id /home/eric/.config/autostart/discord.sh
 exec --no-startup-id /home/eric/.config/autostart.sh
 
-exec --no-startup-id feh --bg-scale --no-xinerama /home/eric/wallpaper/gh.jpg
+exec --no-startup-id feh --bg-scale --no-xinerama ~/.config/wallpapers/dragon.jpg
 
 exec --no-startup-id systemctl start openvpn-client@vpn.service 
 
