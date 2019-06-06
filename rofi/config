@@ -1,2 +1,2 @@
 rofi.combi-modi:    window,drun,ssh
-rofi.theme: /usr/share/rofi/themes/sidebar.rasi
+rofi.theme: ~/.config/rofi/sidetab.rasi
