@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lt="ls -tal"
-alias vim="vim -u ~/.config/.vimrc"
+alias vim="nvim -u ~/.config/.vimrc"
 alias svim="sudo vim -u ~/.config/.vimrc"
 alias clock="tty-clock -C 3"
 alias night="redshift -O 4500"
