@@ -23,8 +23,8 @@ fish/fish_variables
 !.zsh
 !.zsh/.zshrc
 !.vim
-!.vimrc/*
-!.vimrc/**/*
+!.vim/*
+!.vim/**/*
 !__move_contents_to_home__
 !__move_contents_to_home__/*
 !screenshot.png
