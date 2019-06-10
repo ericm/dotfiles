@@ -153,6 +153,28 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+
 " Plugs
 call plug#begin('~/.config/.vim/plugged')
 Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
+call plug#end()
+let g:deoplete#enable_at_startup = 1
+
+filetype off
+" Vundle
+set rtp+=~/.config/.vim/bundle/Vundle.vim
+call vundle#begin('~/.config/.vim/bundle')
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()            " required
+filetype plugin indent on
+
+autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()<CR>
+
+" Prettier
+autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript

@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lt="ls -tal"
 alias vim="nvim -u ~/.config/.vim/vimrc"
-alias svim="sudo vim -u ~/.config/.vim/vimrc"
+alias svim="sudo nvim -u ~/.config/.vim/vimrc"
 alias clock="tty-clock -C 3"
 alias night="redshift -O 4500"
 alias day="redshift -x"
