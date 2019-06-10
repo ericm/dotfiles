@@ -158,11 +158,13 @@ let g:airline_symbols.linenr = ''
 call plug#begin('~/.config/.vim/plugged')
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'zivyangll/git-blame.vim'
+Plug 'curist/vim-angular-template'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 
@@ -185,3 +187,5 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " Vim blame
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+set signcolumn=yes
