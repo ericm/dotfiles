@@ -160,7 +160,9 @@ Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-
+Plug 'vim-syntastic/syntastic'
+Plug 'airblade/vim-gitgutter'
+Plug 'zivyangll/git-blame.vim'
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 
@@ -169,7 +171,7 @@ filetype off
 set rtp+=~/.config/.vim/bundle/Vundle.vim
 call vundle#begin('~/.config/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -178,3 +180,8 @@ autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()
 
 " Prettier
 autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+" Vim blame
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
