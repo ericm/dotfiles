@@ -4,6 +4,8 @@ set number
 highlight LineNr ctermfg=grey
 set hidden
 set tabstop=4
+set autoread
+au CursorHold,CursorHoldI * checktime
 
 color horizon
 
@@ -165,6 +167,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'zivyangll/git-blame.vim'
 Plug 'curist/vim-angular-template'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 
@@ -189,3 +192,17 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 set signcolumn=yes
+
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+set cursorline
+
+" Close brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+set updatetime=100
