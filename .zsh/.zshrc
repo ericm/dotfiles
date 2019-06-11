@@ -1,6 +1,8 @@
 export LC_ALL=en_IE.utf8                                      
 export LANG=en_IE.utf8
 export VIMRUNTIME=~/.config/.vim
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
