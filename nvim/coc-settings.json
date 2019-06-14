@@ -3,8 +3,8 @@
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "typescript.preferences.noSemicolons": true,
   "typescript.suggestionActions.enabled": false,
-  "python.linting.enabled": false,
   "python.jediEnabled": false,
+  "python.linting.pydocstyleEnabled": false,
   "languageserver": {
     "golang": {
       "command": "gopls",
