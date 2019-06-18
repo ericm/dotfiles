@@ -245,8 +245,8 @@ set $cyan	#2AA198
 set $dark	#00252E
 
 # Set this per wallpaper
-set $background #000b13
-set $secondary  #000e17
+set $background #080808
+set $secondary  #0e0e0e
 
 for_window [class="^.*"] border pixel 0
 #for_window [window_role="pop-up"] floating enable border pixel 3
