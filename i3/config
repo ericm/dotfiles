@@ -245,8 +245,8 @@ set $cyan	#2AA198
 set $dark	#00252E
 
 # Set this per wallpaper
-set $background #0B0B41
-set $secondary  #0F0F3F
+set $background #000b13
+set $secondary  #000e17
 
 for_window [class="^.*"] border pixel 0
 #for_window [window_role="pop-up"] floating enable border pixel 3
@@ -287,7 +287,7 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id ~/.config/autostart/discord.sh
 exec --no-startup-id ~/.config/autostart.sh
 
-exec --no-startup-id feh --bg-scale --no-xinerama ~/.config/wallpapers/dragon.jpg
+exec --no-startup-id feh --bg-fill --no-xinerama ~/.config/wallpapers/light.jpg
 
 exec --no-startup-id systemctl start openvpn-client@vpn.service 
 
