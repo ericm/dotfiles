@@ -291,3 +291,7 @@ exec --no-startup-id feh --bg-fill --no-xinerama ~/.config/wallpapers/light.jpg
 
 exec --no-startup-id systemctl start openvpn-client@vpn.service 
 
+exec --no-startup-id nm-applet
+exec --no-startup-id blueberry-tray
+
+
