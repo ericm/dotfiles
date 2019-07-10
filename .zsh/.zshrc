@@ -116,7 +116,7 @@ alias ds="sudo du -hs * | sort -h"
 source ~/.config/.zsh/aliases.zsh 
 
 
-export EDITOR=vim
+export EDITOR=nvim
 
 neofetch
 
