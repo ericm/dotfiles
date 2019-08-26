@@ -181,7 +181,10 @@ set rtp+=~/.config/.vim/bundle/Vundle.vim
 call vundle#begin('~/.config/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
-
+Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'jalvesaq/Nvim-R'
+Plugin 'gaalcaras/ncm-R'
+Plugin 'ncm2/ncm2'
 call vundle#end()            " required
 filetype plugin indent on
 
@@ -191,6 +194,8 @@ autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()
 autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+let g:livepreview_previewer = 'evince'
 
 " Vim blame
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>

@@ -2,7 +2,7 @@ export LC_ALL=en_IE.utf8
 export LANG=en_IE.utf8
 export VIMRUNTIME=~/.config/.vim
 export GOPATH=~/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/.local/bin
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -110,6 +110,7 @@ alias night="redshift -O 4500"
 alias day="redshift -x"
 alias discord-fix="sh /home/eric/.config/autostart/discord.sh"
 alias mnt-home="sudo sshfs -o allow_other eric@192.168.1.40:/home/eric /mnt/home -o IdentityFile=/home/eric/.ssh/id_rsa"
+alias mnt-server="sudo sshfs -o allow_other eric@s.moynihan.io:/home/eric /mnt/home -o IdentityFile=/home/eric/.ssh/id_rsa"
 alias ds="sudo du -hs * | sort -h"
 
 # Custom aliases
