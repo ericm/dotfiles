@@ -285,7 +285,7 @@ bar {
 
 #exec_always --no-startup-id i3icons2 && i3icons2 || i3icons2
 
-exec --no-startup-id compton --config ~/.config/compton.conf -b
+#exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id ~/.config/autostart/discord.sh
 exec --no-startup-id ~/.config/autostart.sh
 

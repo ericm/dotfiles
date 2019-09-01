@@ -119,5 +119,4 @@ source ~/.config/.zsh/aliases.zsh
 
 export EDITOR=vim
 
-neofetch
-
+neofetch --disable packages
