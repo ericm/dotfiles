@@ -62,6 +62,7 @@ set ruler
 " Always display the status line, even if only one window is displayed
 set laststatus=2
  
+let g:tex_flavor = "latex"
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
@@ -159,9 +160,8 @@ let g:airline_symbols.linenr = ''
 " Plugs
 call plug#begin('~/.config/.vim/plugged')
 Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'zivyangll/git-blame.vim'
@@ -213,5 +213,5 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
-set updatetime=100
+let g:livepreview_cursorhold_recompile = 0
+set updatetime=1000
