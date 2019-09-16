@@ -159,7 +159,7 @@ let g:airline_symbols.linenr = ''
 
 " Plugs
 call plug#begin('~/.config/.vim/plugged')
-Plug 'ianks/vim-tsx'
+""Plug 'ianks/vim-tsx'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-syntastic/syntastic'
@@ -188,10 +188,10 @@ Plugin 'ncm2/ncm2'
 call vundle#end()            " required
 filetype plugin indent on
 
-autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()<CR>
+" autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()<CR>
 
 " Prettier
-autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+" autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
@@ -205,13 +205,14 @@ set signcolumn=yes
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline
 
+
 " Close brackets
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+"inoremap {<CR> {<CR>}<ESC>O
+"inoremap {;<CR> {<CR>};<ESC>O
 let g:livepreview_cursorhold_recompile = 0
 set updatetime=1000
