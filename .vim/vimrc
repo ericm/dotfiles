@@ -6,7 +6,6 @@ set hidden
 set tabstop=4
 set autoread
 au CursorHold,CursorHoldI * checktime
-
 color horizon
 
 " Note that not everyone likes working this way (with the hidden option).
@@ -167,10 +166,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'zivyangll/git-blame.vim'
 Plug 'curist/vim-angular-template'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'leafgarland/typescript-vim'
+""Plug 'ludovicchabant/vim-gutentags'
+Plug 'sirver/UltiSnips'
+""Plug 'Quramy/tsuquyomi'
+""Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'SirVer/ultisnips'
+""Plug 'ternjs/tern_for_vim'
+""Plug 'SirVer/ultisnips'
+""Plug 'danielroseman/pygd-vim'
+
+""Plug 'davidhalter/jedi-vim'
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 let g:pymode_python = 'python3'
@@ -182,16 +188,16 @@ call vundle#begin('~/.config/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'jalvesaq/Nvim-R'
-Plugin 'gaalcaras/ncm-R'
-Plugin 'ncm2/ncm2'
+""Plugin 'jalvesaq/Nvim-R'
+""Plugin 'gaalcaras/ncm-R'
+""Plugin 'ncm2/ncm2'
 call vundle#end()            " required
 filetype plugin indent on
 
-" autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType typescript nmap <buffer> <Leader>T : <C-u>echo tsuquyomi#hint()<CR>
 
-" Prettier
-" autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+"" Prettier
+autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
