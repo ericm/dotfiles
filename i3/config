@@ -119,6 +119,7 @@ assign [class="Firefox"] $ws2
 assign [class="discord"] $ws4
 assign [class="Telegram"] $ws4
 assign [class="intellij"] $ws3
+assign [class="BlueMail"] $ws9
 
 
 workspace $ws2 output HDMI-2
