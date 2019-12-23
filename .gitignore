@@ -28,6 +28,8 @@ fish/fish_variables
 !nvim
 !nvim/
 !nvim/**/*
+!scripts
+!scripts/**/*
 .vim/plugged
 .vim/bundle
 !__move_contents_to_home__

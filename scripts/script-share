@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nmcli c down f91b3e30-a75e-4936-a805-e5803b4624bc
+sudo systemctl start sshd
