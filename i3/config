@@ -296,7 +296,6 @@ exec --no-startup-id feh --bg-fill --no-xinerama ~/.config/wallpapers/lake.jpg
 exec --no-startup-id systemctl start openvpn-client@vpn.service 
 
 exec --no-startup-id nm-applet
-exec --no-startup-id blueberry-tray
 
 exec --no-startup-id /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 

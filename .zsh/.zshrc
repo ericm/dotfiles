@@ -112,6 +112,7 @@ alias discord-fix="sh /home/eric/.config/autostart/discord.sh"
 alias mnt-home="sudo sshfs -o allow_other eric@192.168.1.40:/home/eric /mnt/home -o IdentityFile=/home/eric/.ssh/id_rsa"
 alias mnt-server="sudo sshfs -o allow_other eric@s.moynihan.io:/home/eric /mnt/server -o IdentityFile=/home/eric/.ssh/id_rsa"
 alias ds="sudo du -hs * | sort -h"
+alias blueberry="sudo blueberry"
 
 # Custom aliases
 source ~/.config/.zsh/aliases.zsh 
