@@ -234,7 +234,7 @@ mode "resize" {
 bindsym $mod+r mode "resize
 
 # Theme
-set $transparent #00000000
+set $transparent #0000004c
 set $black	#0e0e0e
 set $white	#839496
 set $gray	#CCCCCC
@@ -277,7 +277,7 @@ bar {
         tray_output primary
         colors {
                 statusline	#999999
-                background	$background
+                background $transparent
 
                 # Colors            border      backgr.     text
                 focused_workspace   $white      $white      $background
@@ -292,6 +292,9 @@ bar {
 #exec_always --no-startup-id i3icons2 && i3icons2 || i3icons2
 
 #exec --no-startup-id compton --config ~/.config/compton.conf -b
+
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy
+
 exec --no-startup-id ~/.config/autostart/discord.sh
 exec --no-startup-id ~/.config/autostart.sh
 
