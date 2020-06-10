@@ -1,5 +1,5 @@
-PICTURE=~/tmp/i3lock.png
-SCREENSHOT="scrot $PICTURE"
+PICTURE=/tmp/i3lock.png
+SCREENSHOT="grim $PICTURE"
 
 BLUR="16x8"
 
